@@ -54,7 +54,7 @@ const tiles = {
   },
 }
 
-const width = 3 * 1
+const width = 3 * 10
 
 class Canvas{
   constructor(){
@@ -172,7 +172,7 @@ class Canvas{
 
         if(entropy == 1){
           const image = this._images[this._matrix[j][i].options[0]]
-          this._ctx.drawImage(image, width * i, width * j)
+          this._ctx.drawImage(image, width * i, width * j, width, width)
         } else {
           switch(entropy){
             case 0:
