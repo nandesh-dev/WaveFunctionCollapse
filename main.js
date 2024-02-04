@@ -89,7 +89,7 @@ class Canvas{
   async _loadImages(){
     const promises = []
     Object.keys(tiles).forEach((id)=>{
-      promises.push(loadImage("/assets/" + tiles[id].image))
+      promises.push(loadImage("/WaveFunctionCollapse/assets/" + tiles[id].image))
     })
     
     const images = await Promise.all(promises)
